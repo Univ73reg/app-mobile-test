@@ -1,7 +1,7 @@
 product_test
 2.7
-file:///E:/app_to_mobile/product_test/product_test/
-file:///E:/app_to_mobile/product_test/product_test/lib/
+file:///E:/app_mobile/app-mobile-test/product_test/
+file:///E:/app_mobile/app-mobile-test/product_test/lib/
 async
 2.12
 file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0/
@@ -34,6 +34,10 @@ fake_async
 2.12
 file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/
 file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib/
+flutter_rating_bar
+2.12
+file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_rating_bar-4.0.0/
+file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_rating_bar-4.0.0/lib/
 matcher
 2.12
 file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.10/

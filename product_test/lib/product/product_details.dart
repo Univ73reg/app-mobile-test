@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:product_test/model/product.dart';
 import 'package:product_test/product/products.dart';
 
+// ignore: must_be_immutable
 class ProductDetails extends StatelessWidget {
   int _productid;
 

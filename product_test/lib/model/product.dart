@@ -5,10 +5,11 @@ class Product {
   String description;
   String color;
   String size;
-  double price;
+  int price;
   String currency;
   bool like;
   String picture;
+  double rating;
 
   Product(
       {this.id,
@@ -20,5 +21,6 @@ class Product {
       this.price,
       this.currency,
       this.like,
-      this.picture});
+      this.picture,
+      this.rating});
 }

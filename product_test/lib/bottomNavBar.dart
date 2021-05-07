@@ -7,12 +7,18 @@ import 'package:product_test/pages/favorite.dart';
 import 'package:product_test/pages/person.dart';
 
 class Nav extends StatefulWidget {
+  int _indexPage;
+
+  Nav({int indexPage}) : _indexPage = indexPage;
+
   @override
-  _NavState createState() => _NavState();
+  _NavState createState() => _NavState(indexPage: _indexPage);
 }
 
 class _NavState extends State<Nav> {
-  int _selectedIndex = 0;
+  int _selectedIndex;
+
+  _NavState({int indexPage}) : _selectedIndex = indexPage;
 
   List<Widget> _widgetOptions = <Widget>[
     Home(),
@@ -32,12 +38,36 @@ class _NavState extends State<Nav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      /*appBar: AppBar(
+        backgroundColor: Color(0xFFF9F9F9),
+        title: Container(
+          padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+          child: Align(
+            child: Text('Title appBar',
+                style: Theme.of(context).textTheme.headline6),
+            alignment: Alignment.center,
+          ),
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search_outlined),
+            onPressed: () => null,
+            color: Color(0xFF222222),
+          ),
+        ],
+      ),*/
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
-        //iconSize: 36,
+        backgroundColor: Color(0xFFFFFFFF),
         //showSelectedLabels: true,
-        //showUnselectedLabels: true,
-        //selectedItemColor: Color(0xFFDB3022),
+        showUnselectedLabels: true,
+        selectedItemColor: Theme.of(context).iconTheme.color,
+        unselectedItemColor: Color(0xFF9B9B9B),
+
+        selectedIconTheme: Theme.of(context).iconTheme,
+        unselectedIconTheme: Theme.of(context)
+            .iconTheme
+            .copyWith(opacity: 0.5, color: Color(0xFF9B9B9B)),
 
         //fixedColor: Color(0xFFDB3022),
 
@@ -45,57 +75,45 @@ class _NavState extends State<Nav> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home_outlined,
-              color: Color(0xFF757575),
             ),
             activeIcon: Icon(
               Icons.home,
-              color: Color(0xFF757575),
             ),
             label: 'Главная',
-            //backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.shopping_cart_outlined,
-              color: Color(0xFF757575),
             ),
             activeIcon: Icon(
               Icons.shopping_cart,
-              color: Color(0xFF757575),
             ),
             label: 'Каталог',
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              //Icons.card_giftcard,
               Icons.shopping_bag_outlined,
-              color: Color(0xFF757575),
             ),
             activeIcon: Icon(
               Icons.shopping_bag,
-              color: Color(0xFF757575),
             ),
             label: 'Корзина',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.favorite_outline,
-              color: Color(0xFF757575),
             ),
             activeIcon: Icon(
               Icons.favorite,
-              color: Color(0xFF757575),
             ),
             label: 'Избранное',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person_outline,
-              color: Color(0xFF757575),
             ),
             activeIcon: Icon(
               Icons.person,
-              color: Color(0xFF757575),
             ),
             label: 'Профиль',
           ),

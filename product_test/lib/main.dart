@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:product_test/theme/theme.dart';
 import 'package:product_test/config/route.dart';
-//import 'package:product_test/config/onGenerateRoute.dart';
 import 'package:product_test/bottomNavBar.dart';
 
 void main() {
@@ -24,10 +24,11 @@ class Shop extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
+      /*theme: ThemeData(
         primarySwatch: Colors.blue,
-      ),
-      home: Nav(),
+      ),*/
+      theme: TestTheme(),
+      home: Nav(indexPage: 0),
       /*home: Scaffold(
         appBar: AppBar(
           title: const Text('Product Test'),

@@ -1,5 +1,3 @@
-//import 'package:flutter/material.dart';
-
 import 'package:product_test/model/product.dart';
 
 class Products {
@@ -17,7 +15,8 @@ class Products {
         price: 10,
         currency: '\$',
         like: false,
-        picture: 'assets/product/1.jpg'),
+        picture: 'assets/product/1.jpg',
+        rating: 4.25),
     Product(
         id: 2,
         name: 'Longsleeve Violeta',
@@ -28,7 +27,8 @@ class Products {
         price: 46,
         currency: '\$',
         like: false,
-        picture: 'assets/product/2.jpg'),
+        picture: 'assets/product/2.jpg',
+        rating: 5),
     Product(
         id: 3,
         name: 'T-Shirt',
@@ -39,7 +39,8 @@ class Products {
         price: 39,
         currency: '\$',
         like: false,
-        picture: 'assets/product/3.jpg'),
+        picture: 'assets/product/3.jpg',
+        rating: 3),
     Product(
         id: 4,
         name: 'T-Shirt Sailing',
@@ -50,7 +51,8 @@ class Products {
         price: 10,
         currency: '\$',
         like: false,
-        picture: 'assets/product/4.jpg'),
+        picture: 'assets/product/4.jpg',
+        rating: 4),
     Product(
         id: 5,
         name: 'Evening Dress',
@@ -61,7 +63,8 @@ class Products {
         price: 12,
         currency: '\$',
         like: false,
-        picture: 'assets/product/5.jpg'),
+        picture: 'assets/product/5.jpg',
+        rating: 4.5),
     Product(
         id: 6,
         name: 'Shirt',
@@ -72,7 +75,8 @@ class Products {
         price: 10,
         currency: '\$',
         like: false,
-        picture: 'assets/product/1.jpg'),
+        picture: 'assets/product/1.jpg',
+        rating: 3.75),
     Product(
         id: 7,
         name: 'Longsleeve Violeta',
@@ -83,7 +87,8 @@ class Products {
         price: 46,
         currency: '\$',
         like: false,
-        picture: 'assets/product/2.jpg'),
+        picture: 'assets/product/2.jpg',
+        rating: 5),
     Product(
         id: 8,
         name: 'T-Shirt',
@@ -94,7 +99,8 @@ class Products {
         price: 39,
         currency: '\$',
         like: false,
-        picture: 'assets/product/3.jpg'),
+        picture: 'assets/product/3.jpg',
+        rating: 4.25),
     Product(
         id: 9,
         name: 'T-Shirt Sailing',
@@ -105,7 +111,8 @@ class Products {
         price: 10,
         currency: '\$',
         like: false,
-        picture: 'assets/product/4.jpg'),
+        picture: 'assets/product/4.jpg',
+        rating: 5),
     Product(
         id: 10,
         name: 'Evening Dress',
@@ -116,7 +123,8 @@ class Products {
         price: 12,
         currency: '\$',
         like: false,
-        picture: 'assets/product/5.jpg'),
+        picture: 'assets/product/5.jpg',
+        rating: 3.5)
   ];
   //}
 }
